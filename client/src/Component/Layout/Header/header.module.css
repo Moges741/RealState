@@ -25,3 +25,13 @@
 .nav_links div a:hover{
     color: blue;
 }
+.title{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}

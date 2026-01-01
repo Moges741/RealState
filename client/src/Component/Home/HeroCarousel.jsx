@@ -21,7 +21,74 @@ const HeroCarousel = () => {
             </div>
           // </div>
         ))}
+      
+       
+     
       </Carousel>
+         <div className={styles.hero_search}>
+      <input
+        type="text"
+        name="city"
+        placeholder="City"
+        // value={filters.city}
+      />
+
+      <select name="bedrooms" 
+      // value={filters.bedrooms}
+      >
+        <option value="">Bedrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3+</option>
+      </select>
+
+      <select name="bathrooms" 
+      // value={filters.bathrooms}
+    >
+        <option value="">Bathrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3+</option>
+      </select>
+
+      <input
+        type="number"
+        name="priceFrom"
+        placeholder="$ From"
+        // value={filters.priceFrom}
+        
+      />
+
+      <input
+        type="number"
+        name="priceTo"
+        placeholder="$ To"
+        // value={filters.priceTo}
+        
+      />
+
+      <div className="checkbox-group">
+        <label>
+          <input
+            type="checkbox"
+            // checked={filters.type === "rent"}
+           
+          />
+          For Rent
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            // checked={filters.type === "sale"}
+          />
+          For Sale
+        </label>
+      </div>
+
+      <button>Search</button>
+    </div>
+
     </div>
   );
 };
