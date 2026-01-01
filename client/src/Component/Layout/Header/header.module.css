@@ -1,0 +1,14 @@
+.header_container{
+    position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+    justify-content: space-between;
+}
+.nav_links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}

@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carouselContainer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.carouselContainer img{
+    height: 650px;
+    object-fit: cover;
+}
