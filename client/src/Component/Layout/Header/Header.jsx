@@ -6,34 +6,20 @@ const Header = () => {
    const [session, setSession] = useState(null);
    const [profile, setProfile] = useState(null);
 
-
-  useEffect(() => {
-  let isMounted = true;
-  
+useEffect(() => {
   async function getSession() {
     try {
       const { session: sessionData, profile: profileData } = await getSessionApi();
-      
-      
-      if (isMounted) {
-        setSession(sessionData);
-        setProfile(profileData);
-      }
+      setSession(sessionData);
+      setProfile(profileData);
     } catch (error) {
       console.error("Error fetching session:", error);
-      if (isMounted) {
-        setSession(null);
-        setProfile(null);
-      }
+      setSession(null);
+      setProfile(null);
     }
   }
 
   getSession();
-
-  
-  return () => {
-    isMounted = false;
-  };
 }, []);
   async function handleLogout(e){
     e.preventDefault();

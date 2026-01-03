@@ -30,17 +30,7 @@ export async function SignupApi({ email, password, fullName, role = "user" }) {
   if (error) {
     throw new Error(error.message);
   }
-    // let { data: profile, error: profileError } = await supabase
-    //   .from("profiles")
-    //   .select("role")
-    //   .eq("id", data.user.id)
-    //   .single();
-    // if (error) {
-    //   throw new Error(error.message);
-    // }
-    // if (profileError) {
-    //   throw new Error(profileError.message);
-    // }
+
 
   return  data 
 }
